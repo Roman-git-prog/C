@@ -1,5 +1,5 @@
 #include <stdio.h>
 void main()
 {
-    printf("First programm_2\n");
+    printf("First programm_0\n");
 }
