@@ -1,14 +1,17 @@
 all: phonebook
 #	rm -rf *.o
 
-test_1.o: phonebook.c
-		gcc -c phonebook.c
+phonebook.o: phonebook.c
+	gcc -c phonebook.c
 
 menu.o: menu.c
-		gcc -c menu.c
+	gcc -c menu.c
 
 phonebook: phonebook.o menu.o
-		gcc -o phonebook phonebook.o menu.o
+	gcc -o phonebook phonebook.o menu.o
+
+start:
+	./phonebook
 
 clean:
 	rm -rf *o phonebook
